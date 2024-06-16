@@ -8,7 +8,7 @@
   <style>
     :root {
       font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-      font-size: 16px;
+      font-size: 13px;
       line-height: 24px;
       font-weight: 400;
 
@@ -33,10 +33,28 @@
       width: 100vw;
       height: 100vh;
     }
+
+    #info {
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: right;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      pointer-events: none;
+    }
   </style>
 </head>
 <body>
   <main role="main">
+    <div id="info">
+      <p>WASD - Rotate the submarine</p>
+      <p>SPACE - Accelerate</p>
+    </div>
     <div id="app"></div>
   </main>
 
